@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FatturaElettronicaPA.WebServices/WebServiceSingleItem.cs">
+    <Files>
+      <File FileName="FatturaElettronicaPA.WebServices/WebService.cs" Line="4" Column="4" />
+      <File FileName="FatturaElettronicaPA.WebServices/CodiceUnivocoWebService.cs" Line="1" Column="1" />
+      <File FileName="FatturaElettronicaPA.WebServices/Result.cs" Line="3" Column="3" />
+      <File FileName="Playground/Program.cs" Line="26" Column="26" />
+      <File FileName="FatturaElettronicaPA.WebServices/ResultSingle.cs" Line="41" Column="41" />
+      <File FileName="FatturaElettronicaPA.WebServices/WebServiceSingleItem.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nicola/code/FatturaElettronicaPA/FatturaElettronicaPA.WebServices/FatturaElettronicaPA.WebServices/WebService.cs" line="60" column="4" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

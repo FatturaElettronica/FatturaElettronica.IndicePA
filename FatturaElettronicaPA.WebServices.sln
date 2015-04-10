@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FatturaElettronicaPA.WebServices", "FatturaElettronicaPA.WebServices\FatturaElettronicaPA.WebServices.csproj", "{FCAF5E27-C13E-4CBE-90B0-B084C8AF7332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{57150314-8A2A-47A0-9245-3B6613DE1926}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57150314-8A2A-47A0-9245-3B6613DE1926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57150314-8A2A-47A0-9245-3B6613DE1926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57150314-8A2A-47A0-9245-3B6613DE1926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57150314-8A2A-47A0-9245-3B6613DE1926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCAF5E27-C13E-4CBE-90B0-B084C8AF7332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAF5E27-C13E-4CBE-90B0-B084C8AF7332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAF5E27-C13E-4CBE-90B0-B084C8AF7332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAF5E27-C13E-4CBE-90B0-B084C8AF7332}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Playground\Playground.csproj
+	EndGlobalSection
+EndGlobal
