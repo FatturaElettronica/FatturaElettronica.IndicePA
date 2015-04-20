@@ -12,12 +12,12 @@ namespace FatturaElettronicaPA.WebServices
 		protected string RequestParam;
 		protected string RequestValue;
 
-	    private object _data;
+		private object _data;
 		private bool _silentOnExceptions = true;
 
 		private const string RootUrl = "http://www.indicepa.gov.it/public-ws/";
 
-	    private string PerformRequestRaw ()
+		private string PerformRequestRaw ()
 		{
 			Validate ();
 
@@ -39,7 +39,7 @@ namespace FatturaElettronicaPA.WebServices
 					if (SilentOnExceptions) {
 						return null;
 					}
-                    // ReSharper disable once PossibleIntendedRethrow
+					// ReSharper disable once PossibleIntendedRethrow
 					throw e;
 				}
 
@@ -49,21 +49,21 @@ namespace FatturaElettronicaPA.WebServices
 					// changed or there's a bug).
 					return null;
 				}
-			    return response.Content.ReadAsStringAsync ().Result;
+				return response.Content.ReadAsStringAsync ().Result;
 			}
 		}
 
 		internal Result PerformRequest<T> () where T: new()
 		{
-            Result = null;
-            Data = null;
+			Result = null;
+			Data = null;
 
 			var raw = PerformRequestRaw ();
 			if (raw == null) {
 				// Typically we fall into this guard when an Exception has been 
 				// thrown by the HttpClient and SilentOnException is true, or
 				// when something went orribly wrong with the request.
-                return null;
+				return null;
 			}
 
 			// the PA webservice changes its payload format depending on wether 
@@ -75,9 +75,9 @@ namespace FatturaElettronicaPA.WebServices
 
 			// deserialize Result, wherever it might be located in the payload (see
 			// comment above.
-		    Result = JsonConvert.DeserializeObject<Result>(values.ContainsKey ("result") ? values ["result"].ToString () : raw);
+			Result = JsonConvert.DeserializeObject<Result> (values.ContainsKey ("result") ? values ["result"].ToString () : raw);
 
-		    // deserialize data if available.
+			// deserialize data if available.
 			if (Result != null && Result.ErrorCode == 0 && Result.ItemCount > 0) {
 				_data = JsonConvert.DeserializeAnonymousType (values ["data"].ToString (), new T ());
 			}
@@ -104,9 +104,9 @@ namespace FatturaElettronicaPA.WebServices
 
 		public string AuthId { get; set; }
 
-	    public Result Result { get; internal set; }
+		public Result Result { get; internal set; }
 
-	    internal object Data {
+		internal object Data {
 			get { return _data; }
 			set { _data = value; }
 		}
@@ -116,10 +116,10 @@ namespace FatturaElettronicaPA.WebServices
 			set { _silentOnExceptions = value; }
 		}
 
-	    public void Dispose()
-	    {
-            // Nothing to do here since we're dispoing HttpClient within the PerformRequestRaw Method.
-	    }
+		public void Dispose ()
+		{
+			// Nothing to do here since we're dispoing HttpClient within the PerformRequestRaw Method.
+		}
 	}
 }
 
