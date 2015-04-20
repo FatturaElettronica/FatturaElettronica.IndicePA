@@ -36,7 +36,7 @@ Questo client interroga il corrispondente Web Service PA per verificare la
 validità di un Codice Ente. Se il codice è valido vengono anche restitute tutte
 le informazioni diponibili sull'ente.
 
-    var enteWebService = new DatiEnteWebService {AuthId = "UMMIKQRI", CodiceEnte = "c_h199"};
+    var enteWebService = new DatiEnteWebService {AuthId = "<auth Id>", CodiceEnte = "c_h199"};
 
     enteWebService.PerformRequest();
     
