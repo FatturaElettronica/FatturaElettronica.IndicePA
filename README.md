@@ -18,6 +18,7 @@ validità di un Codice Univoco di "Ufficio destinatario di Fatturazione
 Elettronica e dati SFE". Se il codice è valido vengono anche restitute tutte le
 informazioni diponibili sull'ufficio.
 
+```cs
     var codiceUnivocoWebService = new CodiceUnivocoFatturazioneWebService()
 
     // Authorization Id ricevuto dall'ente.
@@ -29,20 +30,25 @@ informazioni diponibili sull'ufficio.
 
     if (codiceWebService.Ufficio == null) return;
 
+    // "Ravenna"
     Console.WriteLine(codiceWebService.Ufficio.Comune);
+```
 
 ## Dati Ente
 Questo client interroga il corrispondente Web Service PA per verificare la
 validità di un Codice Ente. Se il codice è valido vengono anche restitute tutte
 le informazioni diponibili sull'ente.
 
+```cs
     var enteWebService = new DatiEnteWebService {AuthId = "<auth Id>", CodiceEnte = "c_h199"};
 
     enteWebService.PerformRequest();
     
     if (enteWebService.Ente == null) return;
 
+    // "Ravenna"
     Console.WriteLine(enteWebService.Ente.Comune);
+```
 
 [1]: http://www.indicepa.gov.it/documentale/webservices.php
 [2]: http://www.indicepa.gov.it/registr-user-ws/ws-registrazione-start.php
