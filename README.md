@@ -68,6 +68,25 @@ informazioni di dettaglio relative a ciascuna delle entità individuate.
     Console.WriteLine(emailWebService.Emails[0].Denominazione);
 ```
 
+## Servizi di Fatturazione
+Questo servizio web consente di estrarre dall’iPA informazioni relativa ad una entità, sia
+essa un Ente, un’Unità Organizzativa, un’Area Organizzativa Omogenea, un servizio
+generico, un Servizio di Fatturazione Elettronica, un Responsabile o un Referente, associata
+ad uno specifico indirizzo email. Se un indirizzo mail è associato a più entità all’interno di
+iPA, verranno visualizzate le informazioni di dettaglio relative a ciascuna delle entità
+individuate.
+
+```cs
+    var serviziWebService = new ServiziFatturazioneWebService {AuthId = "<auth Id>", CodiceEnte = "c_h199"};
+
+   serviziWebService.PerformRequest();
+    
+    if (serviziWebService.ServiziFatturazione == null) return;
+
+    // "U.O. LEGALE E CONTENZIOSO"
+    Console.WriteLine(serviziWebService.ServiziFatturazione[0].DenominazioneUnitàOrganizzativa);
+```
+
 
 [1]: http://www.indicepa.gov.it/documentale/webservices.php
 [2]: http://www.indicepa.gov.it/registr-user-ws/ws-registrazione-start.php

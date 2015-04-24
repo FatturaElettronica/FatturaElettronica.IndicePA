@@ -39,6 +39,8 @@
     <Compile Include="DatiEnteWebService.cs" />
     <Compile Include="EmailWebService.cs" />
     <Compile Include="Email.cs" />
+    <Compile Include="ServizioFatturazione.cs" />
+    <Compile Include="ServiziFatturazioneWebService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
