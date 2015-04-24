@@ -43,6 +43,8 @@
     <Compile Include="ServiziFatturazioneWebService.cs" />
     <Compile Include="UnitaOrganizzativeWebService.cs" />
     <Compile Include="UnitaOrganizzativa.cs" />
+    <Compile Include="AreeOmogeneeWebService.cs" />
+    <Compile Include="AreaOmogenea.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>

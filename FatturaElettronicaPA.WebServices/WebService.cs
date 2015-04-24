@@ -11,6 +11,8 @@ namespace FatturaElettronicaPA.WebServices
 		protected string Endpoint;
 		protected string RequestParam;
 		protected string RequestValue;
+		protected string RequestParam2;
+		protected string RequestValue2;
 
 		private object _data;
 		private bool _silentOnExceptions = true;
@@ -29,7 +31,8 @@ namespace FatturaElettronicaPA.WebServices
 				client.BaseAddress = new Uri (RootUrl);
 				var content = new FormUrlEncodedContent (new[] {
 					new KeyValuePair<string, string> ("AUTH_ID", AuthId),
-					new KeyValuePair<string, string> (RequestParam, RequestValue)
+					new KeyValuePair<string, string> (RequestParam, RequestValue),
+					new KeyValuePair<string, string> (RequestParam2, RequestValue2)
 				});
 
 				HttpResponseMessage response;

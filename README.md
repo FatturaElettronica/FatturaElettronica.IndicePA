@@ -109,6 +109,28 @@ facenti capo ad uno specifico codice ente iPA.
     // "Ravenna"
     Console.WriteLine(uoWebService.UnitaOrganizzative[0].Comune);
 ```
+## Lista Aree Organizzative Omogenee
+Questo servizio web consente di estrarre dall’ iPA informazioni su tutte le aree organizzative
+omogenee associate al codice iPA fornito. Il servizio consente, inoltre, di impostare come
+parametro di ricerca anche il codice AOO, oltre il codice iPA. Si tenga presente che nel caso
+in cui l’utente fornisca congiuntamente i due codici (codice iPA e codice AOO) dalla ricerca
+potrà essere estratta solo ed esclusivamente una Area Organizzativa Omogenea.
 
+```cs
+	var aoWebService = new AreeOmogeneeWebService {
+		AuthId = "<auth Id>",
+		CodiceEnte = "c_h199",
+		// opzionale:
+		CodiceAreaOmogenea = "AMC-RA"
+	};
+
+	aoWebService.PerformRequest ();
+	if (aoWebService.AreeOmogenee == null)
+		return;
+	
+	// "Ravenna"
+	Console.WriteLine (aoWebService.AreeOmogenee [0].Comune);
+```
+			
 [1]: http://www.indicepa.gov.it/documentale/webservices.php
 [2]: http://www.indicepa.gov.it/registr-user-ws/ws-registrazione-start.php
