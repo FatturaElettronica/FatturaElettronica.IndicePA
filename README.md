@@ -27,7 +27,6 @@ informazioni diponibili sull'ufficio.
     codiceWebService.CodiceUfficio = "KN3VNW";
 
     codiceWebService.PerformRequest();
-
     if (codiceWebService.Ufficio == null) return;
 
     // "Ravenna"
@@ -40,10 +39,12 @@ validità di un Codice Ente. Se il codice è valido vengono anche restitute tutt
 le informazioni diponibili sull'ente.
 
 ```cs
-    var enteWebService = new DatiEnteWebService {AuthId = "<auth Id>", CodiceEnte = "c_h199"};
+    var enteWebService = new DatiEnteWebService {
+    	AuthId = "<auth Id>", 
+    	CodiceEnte = "c_h199"
+    };
 
     enteWebService.PerformRequest();
-    
     if (enteWebService.Ente == null) return;
 
     // "Ravenna"
@@ -58,10 +59,12 @@ email. Se un indirizzo mail è associato a più entità all’interno di iPA, ve
 informazioni di dettaglio relative a ciascuna delle entità individuate.
 
 ```cs
-    var emailWebService = new EmailWebService {AuthId = "<auth Id>", Email = "comune.ravenna@legalmail.it"};
+    var emailWebService = new EmailWebService {
+    	AuthId = "<auth Id>", 
+    	Email = "comune.ravenna@legalmail.it"
+    };
 
     emailWebService.PerformRequest();
-    
     if (emailWebService.Emails == null) return;
 
     // "Comune di Ravenna"
@@ -77,14 +80,17 @@ iPA, verranno visualizzate le informazioni di dettaglio relative a ciascuna dell
 individuate.
 
 ```cs
-    var serviziWebService = new ServiziFatturazioneWebService {AuthId = "<auth Id>", CodiceEnte = "c_h199"};
+    var serviziWebService = new ServiziFatturazioneWebService {
+    	AuthId = "<auth Id>", 
+    	CodiceEnte = "c_h199"
+    };
 
-   serviziWebService.PerformRequest();
-    
+    serviziWebService.PerformRequest();
     if (serviziWebService.ServiziFatturazione == null) return;
 
     // "U.O. LEGALE E CONTENZIOSO"
-    Console.WriteLine(serviziWebService.ServiziFatturazione[0].DenominazioneUnitàOrganizzativa);
+    Console.WriteLine(
+    	serviziWebService.ServiziFatturazione[0].DenominazioneUnitàOrganizzativa);
 ```
 
 
