@@ -41,6 +41,8 @@
     <Compile Include="Email.cs" />
     <Compile Include="ServizioFatturazione.cs" />
     <Compile Include="ServiziFatturazioneWebService.cs" />
+    <Compile Include="UnitaOrganizzativeWebService.cs" />
+    <Compile Include="UnitaOrganizzativa.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
