@@ -37,6 +37,8 @@
     <Compile Include="Ente.cs" />
     <Compile Include="CodiceUnivocoFatturazioneWebService.cs" />
     <Compile Include="DatiEnteWebService.cs" />
+    <Compile Include="EmailWebService.cs" />
+    <Compile Include="Email.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>

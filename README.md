@@ -50,5 +50,24 @@ le informazioni diponibili sull'ente.
     Console.WriteLine(enteWebService.Ente.Comune);
 ```
 
+## Email
+Questo servizio web consente di estrarre dall’iPA informazioni relativa ad una entità, sia essa 
+un Ente, un’Unità Organizzativa, un’Area Organizzativa Omogenea, un servizio generico, un Servizio 
+di Fatturazione Elettronica, un Responsabile o un Referente, associata ad uno specifico indirizzo 
+email. Se un indirizzo mail è associato a più entità all’interno di iPA, verranno visualizzate le 
+informazioni di dettaglio relative a ciascuna delle entità individuate.
+
+```cs
+    var emailWebService = new EmailWebService {AuthId = "<auth Id>", Email = "comune.ravenna@legalmail.it"};
+
+    emailWebService.PerformRequest();
+    
+    if (emailWebService.Emails == null) return;
+
+    // "Comune di Ravenna"
+    Console.WriteLine(emailWebService.Emails[0].Denominazione);
+```
+
+
 [1]: http://www.indicepa.gov.it/documentale/webservices.php
 [2]: http://www.indicepa.gov.it/registr-user-ws/ws-registrazione-start.php

@@ -78,8 +78,8 @@ namespace FatturaElettronicaPA.WebServices
 			Result = JsonConvert.DeserializeObject<Result> (values.ContainsKey ("result") ? values ["result"].ToString () : raw);
 
 			// deserialize data if available.
-			if (Result != null && Result.ErrorCode == 0 && Result.ItemCount > 0) {
-				_data = JsonConvert.DeserializeAnonymousType (values ["data"].ToString (), new T ());
+			if (Result != null && Result.ErrorCode == 0 && Result.ItemCount >= 1) {
+				_data = JsonConvert.DeserializeObject<T> (values ["data"].ToString ());
 			}
 			return Result;
 		}
