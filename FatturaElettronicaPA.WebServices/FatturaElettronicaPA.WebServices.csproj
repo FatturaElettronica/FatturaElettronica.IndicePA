@@ -32,19 +32,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebService.cs" />
-    <Compile Include="Result.cs" />
-    <Compile Include="Ente.cs" />
-    <Compile Include="CodiceUnivocoFatturazioneWebService.cs" />
-    <Compile Include="DatiEnteWebService.cs" />
-    <Compile Include="EmailWebService.cs" />
-    <Compile Include="Email.cs" />
-    <Compile Include="ServizioFatturazione.cs" />
-    <Compile Include="ServiziFatturazioneWebService.cs" />
-    <Compile Include="UnitaOrganizzativeWebService.cs" />
-    <Compile Include="UnitaOrganizzativa.cs" />
-    <Compile Include="AreeOmogeneeWebService.cs" />
-    <Compile Include="AreaOmogenea.cs" />
+    <Compile Include="WebServices\AreeOmogeneeWebService.cs" />
+    <Compile Include="WebServices\CodiceFiscaleWebService.cs" />
+    <Compile Include="WebServices\CodiceUnivocoFatturazioneWebService.cs" />
+    <Compile Include="WebServices\DatiEnteWebService.cs" />
+    <Compile Include="WebServices\EmailWebService.cs" />
+    <Compile Include="WebServices\ServiziFatturazioneWebService.cs" />
+    <Compile Include="WebServices\UnitaOrganizzativeWebService.cs" />
+    <Compile Include="WebServices\WebService.cs" />
+    <Compile Include="Entities\AreaOmogenea.cs" />
+    <Compile Include="Entities\Email.cs" />
+    <Compile Include="Entities\Ente.cs" />
+    <Compile Include="Entities\ServizioFatturazione.cs" />
+    <Compile Include="Entities\Ufficio.cs" />
+    <Compile Include="Entities\UnitaOrganizzativa.cs" />
+    <Compile Include="WebServices\Result.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -88,4 +90,8 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
   </Target>
+  <ItemGroup>
+    <Folder Include="WebServices\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
 </Project>

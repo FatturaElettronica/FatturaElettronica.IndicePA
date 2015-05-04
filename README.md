@@ -12,6 +12,25 @@ Per l'utilizzo dei Web Services è necessario richiedere una specifica
 autorizzazione. L'Authorization Id è gratuito ed il rilascio è immediato, ma
 bisogna compilare un [apposito questionario][2]. 
 
+## Codice Fiscale
+Questo servizio web consente di estrarre dall’iPA informazioni su tutti gli 
+uffici destinatari di Fatturazione Elettronica associati al Codice Fiscale fornito.
+
+```cs
+
+	var cfWebService = new CodiceFiscaleWebService {
+		AuthId = "<auth Id>",
+		CodiceFiscale = "00354730392",
+	};
+
+	cfWebService.PerformRequest ();
+	if (cfWebService.Uffici == null)
+		return;
+
+	// "Comune di Ravenna"
+	Console.WriteLine (cfWebService.Uffici [0].Denominazione);
+```
+
 ## Codice Univoco di Fatturazione
 Questo client interroga il corrispondente Web Service PA per verificare la
 validità di un Codice Univoco di "Ufficio destinatario di Fatturazione
