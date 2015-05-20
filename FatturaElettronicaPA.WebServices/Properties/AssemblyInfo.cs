@@ -5,11 +5,11 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("FatturaElettronicaPA.WebServices")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyDescription ("Fattura Elettronica PA: Web Services")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("CIR 2000")]
-[assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("nicola")]
+[assembly: AssemblyCompany ("Nicola Iarocci, CIR 2000")]
+[assembly: AssemblyProduct ("FatturaElettronicaPA.WebServices")]
+[assembly: AssemblyCopyright("Copyright © CIR2000 2015")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
@@ -17,11 +17,5 @@ using System.Runtime.CompilerServices;
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
 
-[assembly: AssemblyVersion ("1.0.*")]
-
-// The following attributes are used to specify the signing key for the assembly,
-// if desired. See the Mono documentation for more information about signing.
-
-//[assembly: AssemblyDelaySign(false)]
-//[assembly: AssemblyKeyFile("")]
-
+[assembly: AssemblyVersion("0.1.0.0")]
+[assembly: AssemblyFileVersion("0.1.0.0")]
