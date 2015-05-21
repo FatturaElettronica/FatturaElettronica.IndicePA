@@ -20,7 +20,7 @@ namespace FatturaElettronicaPA.WebServices
 			return PerformRequest <List<Ufficio>> ();
 		}
 
-		public List<Ufficio> Uffici { get { return Data == null ? null : (List<Ufficio>)Data; } }
+		public List<Ufficio> Uffici { get { return Data != null ? (List<Ufficio>)Data : null; } }
 
 		public string CodiceFiscale { 
 

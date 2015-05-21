@@ -11,6 +11,7 @@ namespace FatturaElettronicaPA.WebServices
 		public string TipoEntita { get; set; }
 
 		[JsonProperty (PropertyName = "cod_amm")]
+		// ReSharper disable once InconsistentNaming
 		public string CodiceEntePA { get; set; }
 
 		[JsonProperty (PropertyName = "des_amm")]

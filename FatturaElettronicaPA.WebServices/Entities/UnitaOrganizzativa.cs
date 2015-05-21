@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace FatturaElettronicaPA.WebServices
+﻿namespace FatturaElettronicaPA.WebServices
 {
 	public class UnitaOrganizzativa : Ente
 	{
