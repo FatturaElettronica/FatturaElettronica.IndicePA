@@ -150,6 +150,30 @@ potrà essere estratta solo ed esclusivamente una Area Organizzativa Omogenea.
 	// "Ravenna"
 	Console.WriteLine (aoWebService.AreeOmogenee [0].Comune);
 ```
+
+## Portable Class Library
+La libreria gira senza modifiche sui seguenti ambienti:
+
+- .NET Framework 4.0 e superiori,
+- Xamarin.iOS
+- Xamarin.Android
+- Windows Phone 8
+- Windows Store apps (Windows 8)
+- Silverlight 5.0
+
+## Installazione
+FatturaElettronicaPA.WebServices è su [NuGet][nuget] quindi tutto quel che serve è eseguire:
+
+```
+	PM> Install-Package FatturaElettronicaPA.WebServices
+```
+dalla Package Console, oppure usare il comando equivalente in Visual Studio.
+
+## Licenza
+FatturaElettronicaPA.WebServices è un progetto open source [Gestionale Amica][ga] rilasciato sotto licenza [BSD][bsd].
+
 			
 [1]: http://www.indicepa.gov.it/documentale/webservices.php
 [2]: http://www.indicepa.gov.it/registr-user-ws/ws-registrazione-start.php
+[ga]: http://gestionaleamica.com
+[nuget]: https://www.nuget.org/packages/FatturaElettronicaPA.WebServices/
