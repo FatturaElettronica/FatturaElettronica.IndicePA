@@ -20,6 +20,9 @@ build/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
+
+# NuGet Packages
+*.nupkg
 [Bb]uild[Ll]og.*
 
 *_i.c
