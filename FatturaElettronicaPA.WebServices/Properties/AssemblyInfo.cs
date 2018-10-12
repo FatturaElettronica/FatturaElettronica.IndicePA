@@ -5,7 +5,7 @@ using System.Resources;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("FatturaElettronicaPA.WebServices")]
-[assembly: AssemblyDescription ("Accesso ai Web Service per la Fatturazione Elettronica PA")]
+[assembly: AssemblyDescription ("Questo package e' obsoleto. Usare FatturaElettronica.IndicePA per aggiornamenti.")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("Nicola Iarocci, CIR2000")]
 [assembly: AssemblyProduct ("FatturaElettronicaPA.WebServices")]
@@ -18,5 +18,5 @@ using System.Resources;
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.
 
-[assembly: AssemblyVersion("0.1.0.0")]
-[assembly: AssemblyFileVersion("0.1.0.0")]
+[assembly: AssemblyVersion("0.1.1.0")]
+[assembly: AssemblyFileVersion("0.1.1.0")]
