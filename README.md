@@ -172,5 +172,5 @@ FatturaElettronica.IndicePA è un progetto open source di [Nicola Iarocci][ni] e
 [2]: https://indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php
 [nuget]: https://www.nuget.org/packages/FatturaElettronica.IndicePA
 [bsd]: http://github.com/FatturaElettronica/FatturaElettronica.NET/blob/master/LICENSE
-[ga]: http://gestionaleamica.com
+[ga]: https://gestionaleamica.com
 [ni]: https://nicolaiarocci.com
