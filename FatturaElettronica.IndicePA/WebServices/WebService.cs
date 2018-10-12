@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace FatturaElettronicaPA.WebServices
+namespace FatturaElettronica.IndicePA
 {
 	public abstract class WebService : IDisposable
 	{
@@ -17,7 +17,7 @@ namespace FatturaElettronicaPA.WebServices
 		private object _data;
 		private bool _silentOnExceptions = true;
 
-		private const string RootUrl = "http://www.indicepa.gov.it/public-ws/";
+		private const string RootUrl = "https://www.indicepa.gov.it:443/public-ws/";
 
 		private string PerformRequestRaw ()
 		{

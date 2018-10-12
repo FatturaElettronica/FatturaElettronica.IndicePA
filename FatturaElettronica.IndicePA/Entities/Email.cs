@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace FatturaElettronicaPA.WebServices
+namespace FatturaElettronica.IndicePA
 {
 	public class Email
 	{

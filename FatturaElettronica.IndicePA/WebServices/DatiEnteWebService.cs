@@ -1,5 +1,5 @@
 ﻿
-namespace FatturaElettronicaPA.WebServices
+namespace FatturaElettronica.IndicePA
 {
 	public class DatiEnteWebService : WebService
 	{

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FatturaElettronicaPA.WebServices
+namespace FatturaElettronica.IndicePA
 {
 	/// <summary>
 	/// Questo servizio web consente di estrarre dall’iPA informazioni relativa ad una entità, sia

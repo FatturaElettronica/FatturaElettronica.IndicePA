@@ -1,7 +1,7 @@
-# FatturaElettronicaPA.WebServices
-Il namespace `FatturaElettronicaPA.WebServices` raccoglie i client che
-consentono di consultare i [Web Service per la Fatturazione Elettronica][1]
-messi a disposizione dalla Pubblica Amministrazione. 
+# FatturaElettronica.IndicePA
+
+Il namespace `FatturaElettronica.IndicePA` raccoglie i client che
+consentono di consultare i [Web Service dell'Indice della Pubblica Amministrazione][1] (iPA).
 
 Sono disegnati in maniera da esporre tutti la stessa interfaccia ed essere al
 tempo stesso semplici e leggeri. Al momento lavorano in modalità sincrona ma
@@ -32,7 +32,7 @@ uffici destinatari di Fatturazione Elettronica associati al Codice Fiscale forni
 ```
 
 ## Codice Univoco di Fatturazione
-Questo client interroga il corrispondente Web Service PA per verificare la
+Questo client interroga il corrispondente WebService iPA per verificare la
 validità di un Codice Univoco di "Ufficio destinatario di Fatturazione
 Elettronica e dati SFE". Se il codice è valido vengono anche restitute tutte le
 informazioni diponibili sull'ufficio.
@@ -53,7 +53,7 @@ informazioni diponibili sull'ufficio.
 ```
 
 ## Dati di un Ente
-Questo client interroga il corrispondente Web Service PA per verificare la
+Questo client interroga il corrispondente We Service iPA per verificare la
 validità di un Codice Ente. Se il codice è valido vengono anche restitute tutte
 le informazioni diponibili sull'ente.
 
@@ -129,7 +129,7 @@ facenti capo ad uno specifico codice ente iPA.
     Console.WriteLine(uoWebService.UnitaOrganizzative[0].Comune);
 ```
 ## Lista Aree Organizzative Omogenee
-Questo servizio web consente di estrarre dall’ iPA informazioni su tutte le aree organizzative
+Questo servizio web consente di estrarre dall’iPA informazioni su tutte le aree organizzative
 omogenee associate al codice iPA fornito. Il servizio consente, inoltre, di impostare come
 parametro di ricerca anche il codice AOO, oltre il codice iPA. Si tenga presente che nel caso
 in cui l’utente fornisca congiuntamente i due codici (codice iPA e codice AOO) dalla ricerca
@@ -151,21 +151,16 @@ potrà essere estratta solo ed esclusivamente una Area Organizzativa Omogenea.
 	Console.WriteLine (aoWebService.AreeOmogenee [0].Comune);
 ```
 
-## Portable Class Library
-La libreria gira senza modifiche sui seguenti ambienti:
+## Portabilità
 
-- .NET Framework 4.0 e superiori,
-- Xamarin.iOS
-- Xamarin.Android
-- Windows Phone 8
-- Windows Store apps (Windows 8)
-- Silverlight 5.0
+FatturaElettronica.IndicePA supporta .NET Standard v1.1, cosa che le permette di supportare un [ampio numero di piattaforme][netstandard].
 
 ## Installazione
-FatturaElettronicaPA.WebServices è su [NuGet][nuget] quindi tutto quel che serve è eseguire:
+
+FatturaElettronica.IndicePA è su [NuGet][nuget] quindi tutto quel che serve è eseguire:
 
 ```
-	PM> Install-Package FatturaElettronicaPA.WebServices
+	PM> Install-Package FatturaElettronica.IndicePA
 ```
 dalla Package Console, oppure usare il comando equivalente in Visual Studio.
 
@@ -173,7 +168,7 @@ dalla Package Console, oppure usare il comando equivalente in Visual Studio.
 FatturaElettronicaPA.WebServices è un progetto open source [Gestionale Amica][ga] rilasciato sotto licenza [BSD][bsd].
 
 			
-[1]: http://www.indicepa.gov.it/documentale/webservices.php
-[2]: http://www.indicepa.gov.it/registr-user-ws/ws-registrazione-start.php
-[ga]: http://gestionaleamica.com
-[nuget]: https://www.nuget.org/packages/FatturaElettronicaPA.WebServices/
+[1]: https://indicepa.gov.it/documentale/n-webservices.php
+[2]: https://indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php
+[ga]: https://gestionaleamica.com
+[nuget]: https://www.nuget.org/packages/FatturaElettronica.IndicePA

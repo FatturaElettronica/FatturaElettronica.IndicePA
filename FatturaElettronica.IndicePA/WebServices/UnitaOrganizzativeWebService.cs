@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FatturaElettronicaPA.WebServices
+namespace FatturaElettronica.IndicePA
 {
 	public class UnitaOrganizzativaWebService : WebService
 	{

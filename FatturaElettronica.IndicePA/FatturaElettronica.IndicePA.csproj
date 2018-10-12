@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <PackageId>FatturaElettronica.IndicePA</PackageId>
+    <Authors>Nicola Iarocci</Authors>
+    <Company>CIR 2000</Company>
+    <Product>FatturaElettronica.IndicePA</Product>
+    <Description>Client per accedere ai WebService del Indice della Pubblica Amministrazione Italiana (iPA)</Description>
+    <Copyright>Copyright © CIR2000 2017-2019</Copyright>
+    <PackageLicenseUrl>https://github.com/FatturaElettronica/FatturaElettronica.IndicePA/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>http://fatturaelettronicaopensource.org</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FatturaElettronica/FatturaElettronica.IndicePA</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
