@@ -165,10 +165,12 @@ FatturaElettronica.IndicePA è su [NuGet][nuget] quindi tutto quel che serve è 
 dalla Package Console, oppure usare il comando equivalente in Visual Studio.
 
 ## Licenza
-FatturaElettronicaPA.WebServices è un progetto open source [Gestionale Amica][ga] rilasciato sotto licenza [BSD][bsd].
+FatturaElettronica.IndicePA è un progetto open source di [Nicola Iarocci][ni] e [Gestionale Amica][ga] rilasciato sotto licenza [BSD][bsd].
 
 			
 [1]: https://indicepa.gov.it/documentale/n-webservices.php
 [2]: https://indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php
-[ga]: https://gestionaleamica.com
 [nuget]: https://www.nuget.org/packages/FatturaElettronica.IndicePA
+[bsd]: http://github.com/FatturaElettronica/FatturaElettronica.NET/blob/master/LICENSE
+[ga]: http://gestionaleamica.com
+[ni]: https://nicolaiarocci.com
